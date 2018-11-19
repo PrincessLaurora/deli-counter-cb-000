@@ -14,12 +14,12 @@ end
 def take_a_number(katz_deli, "name")
   if katz_deli.empty?
   katz_deli.unshift("name")
-  puts "Welcome, #{name} . You are number 1 in line."
+  puts "Welcome, #{"name"} . You are number 1 in line."
 else
   katz_deli.push("name")
   another_deli = []
   katz_deli.each_with_index do |name, index|
-  another_deli << "Welcome, #{name}. You are number #{index + 1} in line."
+  another_deli << "Welcome, #{"name"}. You are number #{index + 1} in line."
 end
 puts another_deli
 end
