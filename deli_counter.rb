@@ -16,5 +16,6 @@ def take_a_number(katz_deli, "name")
   katz_deli.unshift("name")
   "Welcome, #{name} . You are number 1 in line."
 else
+  katz_deli.push("name")
 end
 end
