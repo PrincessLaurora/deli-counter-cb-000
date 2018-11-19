@@ -17,6 +17,10 @@ def take_a_number(katz_deli, "name")
   puts "Welcome, #{name} . You are number 1 in line."
 else
   katz_deli.push("name")
+  another_deli = []
+  katz_deli.each_with_index do |name, index|
+  another_deli << "Welcome, #{name}. You are number #{index + 1} in line."
 end
+puts another_deli
 end
-end
+
