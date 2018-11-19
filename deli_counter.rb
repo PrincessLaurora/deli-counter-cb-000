@@ -19,7 +19,7 @@ else
   katz_deli.push("name")
   another_deli = []
   katz_deli.each_with_index do |name, index|
-  another_deli << "Welcome, #{"name"}. You are number #{index + 1} in line."
+  another_deli << "Welcome, #{name}. You are number #{index + 1} in line."
 end
 puts another_deli
 end
