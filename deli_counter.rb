@@ -11,15 +11,7 @@ end
 end
 
 
-def take_a_number(katz_deli, "name")
-  if katz_deli.empty?
-  katz_deli.unshift("name")
-  puts "Welcome, #{"name"} . You are number 1 in line."
-else
-  another_deli.push("name")
-  katz_deli.each_with_index do |name, index|
-  another_deli << "Welcome, #{name}. You are number #{index + 1} in line."
-end
-puts another_deli
-end
+def take_a_number(katz_deli, name)
+  katz_deli.push(name)
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
